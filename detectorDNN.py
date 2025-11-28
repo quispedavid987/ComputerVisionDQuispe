@@ -9,7 +9,7 @@ model = "models/res10_300x300_ssd_iter_140000.caffemodel"
 net = cv2.dnn.readNetFromCaffe(prototxt, model)
 
 ## LEYENDO UNA IMAGEN
-image = cv2.imread("images/imagen_9.jpg")
+image = cv2.imread("images/imagen_7.jpg")
 
 ## REDIMENSIONANDO PARA QUE SEA IMAGEN FUNCIONAL CON LA RED
 height, width, _ = image.shape
