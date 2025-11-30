@@ -3,7 +3,7 @@ import numpy as np
 
 faceClassif = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-image = cv2.imread('images/imagen_5.jpg')
+image = cv2.imread('images/imagen_10.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 faces = faceClassif.detectMultiScale(gray, 
