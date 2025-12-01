@@ -1,6 +1,7 @@
 import cv2
 import os
 import time
+import albumentations as A #---- 
 # ---- ARQUITECTURA
 prototxt = "models/deploy.prototxt"
 
@@ -13,7 +14,7 @@ net = cv2.dnn.readNetFromCaffe(prototxt, model)
 images = sorted(os.listdir('./images/'))
 
 time_cumulated = 0
-confidence = 0.30
+confidence = 0.90
 print(f"Grado de confianza en detección : {confidence}")
 print(f"Imagen\tTiempo( ms)\tRostros")
 for img in images:
@@ -47,11 +48,12 @@ for img in images:
 	print(f'{img}\t{(end-start)*1000:.2f}\t{detected_faces}\t')
 	## MOSTRANDO IMAGEN
 
-	cv2.imshow("Imagen", image)
+	cv2.imwrite(f'results/{img}_cfd_0{confidence*100}.jpg',image)
+	#cv2.imshow("Imagen", image)
 	#cv2.imshow("Imagen muestra", image_show)
 	#cv2.imshow("Imagen redimensionada", image_resized)
 	#cv2.imshow("Imagen pos mean substraction", blob_to_show)
-	cv2.waitKey(0)
-	cv2.destroyAllWindows()
+	#cv2.waitKey(0)
+	#cv2.destroyAllWindows()
 
 print(f'Tiempo promedio por imagen : {time_cumulated/len(images)*1000:.2f} milisegundos')
