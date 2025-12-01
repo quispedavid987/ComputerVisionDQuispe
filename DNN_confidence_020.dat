@@ -1,0 +1,16 @@
+Grado de confianza en detección : 0.2
+Imagen	Tiempo( ms)	Rostros
+imagen_01.jpg	20.43	3	
+imagen_02.jpg	12.97	2	
+imagen_03.jpg	12.24	7	
+imagen_04.jpg	12.19	3	
+imagen_05.jpg	11.73	3	
+imagen_06.jpg	12.05	2	
+imagen_07.jpg	13.21	0	
+imagen_08.jpg	11.95	1	
+imagen_09.jpg	11.92	2	
+imagen_10.jpg	11.78	2	
+imagen_11.jpg	12.49	3	
+imagen_12.jpg	11.89	2	
+imagen_13.jpg	12.05	3	
+Tiempo promedio por imagen : 12.84 milisegundos
