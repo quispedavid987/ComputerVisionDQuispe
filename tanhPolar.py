@@ -46,7 +46,7 @@ net = cv2.dnn.readNetFromCaffe(prototxt, model)
 images = sorted(os.listdir('./images/'))
 
 time_cumulated = 0
-confidence = 0.10
+confidence = 0.30
 
 print(f"Grado de confianza en detección : {confidence}")
 print(f"Imagen\tTiempo( ms)\tRostros")
